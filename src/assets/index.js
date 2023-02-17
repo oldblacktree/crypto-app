@@ -1,3 +1,3 @@
 import logo from './cryptocurrency.png';
 
-export { logo };
+export default { logo };
