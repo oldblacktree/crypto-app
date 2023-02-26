@@ -8,13 +8,15 @@ const App = () => {
     <div className="app">
       <Navbar />
       <main className="app__main">
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/cryptocurrencies" element={<Cryptocurrencies />} />
-          <Route path="/exchanges" element={<Exchanges />} />
-          <Route path="/crypto/:coinId" element={<CryptoDetails />} />
-          <Route path="/news" element={<News />} />
-        </Routes>
+        <div className="app__main-info">
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/cryptocurrencies" element={<Cryptocurrencies />} />
+            <Route path="/exchanges" element={<Exchanges />} />
+            <Route path="/crypto/:coinId" element={<CryptoDetails />} />
+            <Route path="/news" element={<News />} />
+          </Routes>
+        </div>
         <footer className="app__footer">
           <p className="app__footer-info">
             Copyright © 2023 Cryptoverse Inc. <br />

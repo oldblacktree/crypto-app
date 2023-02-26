@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Tourney:wght@500&display=swap');
 
 :root {
   --font-base: "Open Sans", sans-serif;
-  --font-alt: "Tourney", serif;
+  --font-logo: "Tourney", serif;
 
-  --color-black: #000;
-  --color-gray: #d3d3d3;
+  --color-text-primary: #242425;
+  --color-text-secondary: #d3d3d3;
   --color-white: #fff;
   --color-blue: #98C1D9;
   --color-sienna: #EE6C4D;
   --color-dimBlue: #3D5A80;
   --color-bg-gunmetal: #293241;
+  --color-bg-gray: #F0F2F5;
   --color-bg-cyan: #E0FBFC;
 }
 
@@ -25,4 +26,11 @@ a {
   color: unset;
   text-decoration: none;
   display: block;
+}
+
+.section-title {
+  font-size: 1.625rem;
+  font-family: var(--font-base);
+  font-weight: 600;
+  color: var(---color-text-primary);
 }
