@@ -11,7 +11,6 @@ const Navbar = () => {
   const [screenSize, setScreenSize] = useState(null);
 
   useEffect(() => {
-    console.log('heraef')
     const handleResize = () => setScreenSize(window.innerWidth);
     window.addEventListener('resize', handleResize);
     handleResize();

@@ -17,7 +17,7 @@
 }
 .navbar__logo {
   color: var(--color-sienna);
-  font-family: var(--font-alt);
+  font-family: var(--font-logo);
   letter-spacing: -2px;
   font-size: 32px;
   font-weight: 500;
@@ -40,7 +40,7 @@
   display: flex;
   align-items: baseline;
   gap: 10px;
-  color: var(--color-gray);
+  color: var(--color-text-secondary);
 }
 .nav__item a {
   display: flex;
@@ -57,7 +57,7 @@
   font-family: var(--font-base);
 }
 .navbar__menu-button {
-  color: var(--color-gray);
+  color: var(--color-text-secondary);
   display: none;
 }
 
