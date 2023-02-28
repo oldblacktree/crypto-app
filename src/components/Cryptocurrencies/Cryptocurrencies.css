@@ -1,0 +1,19 @@
+.cryptocurrencies__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.cryptocard {
+  width: 250px;
+}
+.cryptocard__logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+.cryptocurrencies__search {
+  margin-bottom: 30px;
+}
+.cryptocurrencies__search input {
+  max-width: 250px;
+}

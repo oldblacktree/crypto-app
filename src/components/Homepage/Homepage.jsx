@@ -2,7 +2,7 @@ import './Homepage.css';
 import millify from 'millify';
 import { Link } from 'react-router-dom'; 
 import { useGetCryptosQuery } from '../../services/cryptoApi';
-import {Cryptocurrencies, News} from '../index';
+import {Cryptocurrencies, Loader, News} from '../index';
 
 const StatsItem = ({title, value}) => (
   <div className="stats-item">
@@ -12,9 +12,10 @@ const StatsItem = ({title, value}) => (
 )
 
 const Homepage = () => {
-  const { data, isFetching } = useGetCryptosQuery();
-  const globalStats = data?.data?.stats || {};
+  const { data, isFetching } = useGetCryptosQuery(10);
+  const globalStats = data?.data?.stats;
 
+  if (isFetching) return <Loader />;
 
   return (
     <div className="homepage">
@@ -22,11 +23,11 @@ const Homepage = () => {
         <h2 className="section-title">Global Crypto Stats</h2>
       </div>
       <div className="stats">
-        <StatsItem title="Total Cryptocurrencies" value={millify(globalStats.total)}/>
-        <StatsItem title="Total Exchanges" value={millify(globalStats.totalExchanges)}/>
-        <StatsItem title="Total Market Cap" value={millify(globalStats.totalMarketCap)}/>
-        <StatsItem title="Total 24h Volume" value={millify(globalStats.total24hVolume)}/>
-        <StatsItem title="Total Markets" value={millify(globalStats.totalMarkets)}/>
+        <StatsItem title="Total Cryptocurrencies" value={millify(globalStats?.total)}/>
+        <StatsItem title="Total Exchanges" value={millify(globalStats?.totalExchanges)}/>
+        <StatsItem title="Total Market Cap" value={millify(globalStats?.totalMarketCap)}/>
+        <StatsItem title="Total 24h Volume" value={millify(globalStats?.total24hVolume)}/>
+        <StatsItem title="Total Markets" value={millify(globalStats?.totalMarkets)}/>
       </div>
       <div className="section-title-wrapper">
         <h2 className="section-title">Top 10 Cryptos In The World</h2>
