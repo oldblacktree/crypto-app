@@ -1,0 +1,30 @@
+.news {
+  display: flex;
+  justify-content: center;
+}
+
+.news-card-wrapper {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.news-card .ant-card-head-title {
+  white-space: normal;
+  margin-right: 5px;
+}
+
+.news-card__date {
+  text-align: end;
+  font-family: var(--font-base);
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.news-card__description {
+  padding-right: 60px;
+  white-space: normal;
+}
