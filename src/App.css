@@ -11,7 +11,7 @@
   background-color: var(--color-bg-gray);
 }
 .app__main-info {
-  padding: 20px;
+  padding: 25px;
   flex: 1;
 }
 

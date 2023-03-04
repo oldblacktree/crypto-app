@@ -34,6 +34,18 @@ a {
   font-weight: 600;
   color: var(--color-dimBlue);
 }
+.section-title3 {
+  font-size: 1.3rem;
+  font-family: var(--font-base);
+  font-weight: 600;
+  color: var(--color-dimBlue);
+}
+
+
+.paragraph {
+  font-family: var(--font-base);
+  color: var(--color-text-primary);
+}
 
 .link {
   font-size: 1.25rem;
