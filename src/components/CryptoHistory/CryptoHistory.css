@@ -1,0 +1,12 @@
+.crypto-history__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.crypto-history__title-change--up {
+  color: green;
+}
+
+.crypto-history__title-change--down {
+  color: red;
+}
