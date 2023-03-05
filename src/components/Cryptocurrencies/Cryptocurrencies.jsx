@@ -34,10 +34,10 @@ const Cryptocurrencies = ({short}) => {
         {cryptos?.map((coin) => (
           <Link to={`/crypto/${coin.uuid}`} key={coin.uuid}>
             <Card
-              title={`${coin.rank} ${coin.name}`}
+              title={coin.name.length < 20 ? `${coin.rank} ${coin.name}` : `${coin.rank} ${coin.name.slice(0, 17)}...`}
               extra={<img className="cryptocard__logo" src={coin.iconUrl} />}
               hoverable
-              className='cryptocard'
+              className='paragraph'
             >
               <p>Price: {millify(coin.price)}</p>
               <p>Market Cap: {millify(coin.marketCap)}</p>

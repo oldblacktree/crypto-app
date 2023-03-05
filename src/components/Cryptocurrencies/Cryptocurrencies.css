@@ -2,9 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: space-between;
 }
-.cryptocard {
-  width: 250px;
+.cryptocurrencies__list a {
+  flex: 0 31%;
 }
 .cryptocard__logo {
   width: 30px;
@@ -16,4 +17,18 @@
 }
 .cryptocurrencies__search input {
   max-width: 250px;
+}
+
+@media screen and (max-width: 1200px) {
+  .cryptocurrencies__list a {
+    flex: 0 48%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cryptocurrencies__list a {
+    flex: 1;
+  }
+  .cryptocurrencies__list {
+    flex-direction: column;
+  }
 }

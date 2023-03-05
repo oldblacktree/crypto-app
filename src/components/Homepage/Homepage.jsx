@@ -34,11 +34,13 @@ const Homepage = () => {
         <Link to="/cryptocurrencies" className='link'>Show more</Link>
       </div>
       <Cryptocurrencies short/>
+      <Link to="/cryptocurrencies" className='link homepage__mobile-link'>Show more</Link>
       <div className="section-title-wrapper">
         <h2 className="section-title">Latest Crypto News</h2>
         <Link to="/news" className='link'>Show more</Link>
       </div>
       < News short/>
+      <Link to="/news" className='link homepage__mobile-link'>Show more</Link>
     </div>
   )
 }

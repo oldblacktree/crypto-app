@@ -51,12 +51,6 @@ const Navbar = () => {
               </Link>
             </li>
             <li className='nav__item'>
-              <Link to={'/exchanges'}>
-                <MoneyCollectOutlined />
-                <span className='nav__item-label'>Exchanges</span>
-              </Link>
-            </li>
-            <li className='nav__item'>
               <Link to={'/news'}>
                 <BulbOutlined />
                 <span className='nav__item-label'>News</span>

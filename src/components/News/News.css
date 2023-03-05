@@ -28,3 +28,9 @@
   padding-right: 60px;
   white-space: normal;
 }
+
+@media screen and (max-width: 600px) {
+  .news-card__description {
+    padding-right: 0;
+  }
+}

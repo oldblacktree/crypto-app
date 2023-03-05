@@ -15,7 +15,7 @@
 }
 .stats-item {
   flex: 1;
-  min-width: 250px;
+  min-width: 200px;
 }
 
 .stats::after {
@@ -29,8 +29,23 @@
   justify-content: space-between;
   margin-bottom: 20px;
   margin-top: 20px;
+  gap: 15px;
+}
+
+.homepage__mobile-link {
+  display: none;
 }
 
 .homepage .section-title-wrapper:first-child {
   margin-top: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .section-title-wrapper a{
+    display: none;
+  }
+  .homepage__mobile-link {
+    display: inline-block;
+    margin-top:10px;
+  }
 }

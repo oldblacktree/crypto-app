@@ -14,19 +14,16 @@ const News = ({short}) => {
     <div className="news">
       <div className="news-card-wrapper">
         {data?.map((news, i) => (
-          <Card hoverable className='news-card'
-            title={news.title.length > 100 ? `${news.title.substring(0, 100)}...` : news.title}
-            bordered={false}
-            key={i}
-            extra={ <a href={news.url} target="_blank"
-            className='link'>
-              more
-            </a>}>
-            <p className="news-card__description">{news.description.length > 200 ? `${news.description.substring(0, 200)}...` : news.description}</p>
-            <p className="news-card__date">
-            {moment(news.date).startOf('hour').fromNow()}
-            </p>
-          </Card>
+          <a href={news.url} target="_blank" key={i}>
+            <Card hoverable className='news-card'
+              title={news.title.length > 100 ? `${news.title.substring(0, 100)}...` : news.title}
+              bordered={false}>
+                <p className="news-card__description">{news.description.length > 200 ? `${news.description.substring(0, 200)}...` : news.description}</p>
+                <p className="news-card__date">
+                  {moment(news.date).startOf('hour').fromNow()}
+                </p>
+            </Card>
+            </a>
         ))}
       </div>
     </div>
