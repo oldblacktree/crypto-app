@@ -1,5 +1,5 @@
-import { Spin } from 'antd';
-import './Loader.css';
+import { Spin } from "antd";
+import "./Loader.css";
 
 const Loader = () => (
   <div className="loader">

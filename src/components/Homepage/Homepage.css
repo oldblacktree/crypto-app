@@ -3,16 +3,19 @@
   color: #545658;
   margin-bottom: 8px;
 }
+
 .stats-item__value {
   font-size: 24px;
   color: var(--color-text-primary);
 }
+
 .stats {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
+
 .stats-item {
   flex: 1;
   min-width: 200px;
@@ -41,11 +44,12 @@
 }
 
 @media screen and (max-width: 600px) {
-  .section-title-wrapper a{
+  .section-title-wrapper a {
     display: none;
   }
+
   .homepage__mobile-link {
     display: inline-block;
-    margin-top:10px;
+    margin-top: 10px;
   }
 }

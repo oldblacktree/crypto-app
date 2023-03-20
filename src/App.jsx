@@ -1,7 +1,12 @@
-import { Cryptocurrencies, CryptoDetails, Homepage, Navbar, News } from "./components";
-import './App.css';
+import {
+  Cryptocurrencies,
+  CryptoDetails,
+  Homepage,
+  Navbar,
+  News,
+} from "./components";
+import "./App.css";
 import { Route, Routes } from "react-router-dom";
-
 
 const App = () => {
   return (
@@ -21,7 +26,7 @@ const App = () => {
             Copyright © 2023 Cryptoverse Inc. <br />
             Not All Rights Reserved
           </p>
-      </footer>
+        </footer>
       </main>
     </div>
   );

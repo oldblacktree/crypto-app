@@ -9,6 +9,7 @@
   align-items: center;
   gap: 20px;
 }
+
 .coin-details__header-logo {
   width: 30px;
   height: 30px;
@@ -30,6 +31,7 @@
   margin-top: 20px;
   flex-wrap: wrap;
 }
+
 .coin-info__item {
   flex: 1 1 40%;
   min-width: 300px;
@@ -64,6 +66,7 @@
 .coin-info__stats-ico {
   margin-right: 10px;
 }
+
 .coin-info__stats-value {
   font-weight: 700;
 }

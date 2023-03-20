@@ -34,6 +34,7 @@ a {
   font-weight: 600;
   color: var(--color-dimBlue);
 }
+
 .section-title3 {
   font-size: 1.3rem;
   font-family: var(--font-base);
@@ -54,26 +55,23 @@ a {
   font-weight: 500;
   color: var(--color-dimBlue);
   flex-shrink: 0;
-  
+
   padding: 5px;
 
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(100, 200, 200, 1),
-      rgba(100, 200, 200, 1)
-    ),
-    linear-gradient(
-      to right,
+      rgba(100, 200, 200, 1)),
+    linear-gradient(to right,
       var(--color-dimBlue),
       var(--color-dimBlue),
-      var(--color-dimBlue)
-  );
+      var(--color-dimBlue));
   background-size: 100% 3px, 0 3px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 400ms;
 }
+
 .link:hover {
   background-size: 0 3px, 100% 3px;
 }

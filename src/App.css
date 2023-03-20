@@ -10,6 +10,7 @@
   flex-direction: column;
   background-color: var(--color-bg-gray);
 }
+
 .app__main-info {
   padding: 25px;
   flex: 1;
@@ -19,6 +20,7 @@
   background-color: var(--color-bg-gunmetal);
   padding: 10px;
 }
+
 .app__footer-info {
   text-align: center;
   color: var(--color-text-secondary)

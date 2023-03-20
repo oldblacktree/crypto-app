@@ -6,4 +6,12 @@ import News from "./News/News";
 import Loader from "./Loader/Loader";
 import CryptoHistory from "./CryptoHistory/CryptoHistory";
 
-export { Navbar, Cryptocurrencies, CryptoDetails, Homepage, News, Loader, CryptoHistory };
+export {
+  Navbar,
+  Cryptocurrencies,
+  CryptoDetails,
+  Homepage,
+  News,
+  Loader,
+  CryptoHistory,
+};
